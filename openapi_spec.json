@@ -1,0 +1,61 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ChatGPT Plugin API",
+    "version": "1.0.0",
+    "description": "This is the API specification for the ChatGPT Plugin. It enables ChatGPT to interact with third-party APIs, expanding its capabilities to include actions like retrieving real-time information, accessing knowledge bases, and assisting with tasks."
+  },
+  "servers": [
+    {
+      "url": "https://api.yourdomain.com/v1"
+    }
+  ],
+  "paths": {
+    "/endpoint1": {
+      "get": {
+        "summary": "Endpoint 1",
+        "description": "This is the first endpoint exposed by the plugin.",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/endpoint2": {
+      "get": {
+        "summary": "Endpoint 2",
+        "description": "This is the second endpoint exposed by the plugin.",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
